@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
+import img from "./assets/glass1.jpg";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div
+      className="container"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "auto",
+        border: "2px solid black",
+        width: "400px",
+        padding: "16px",
+        borderRadius: "4px",
+      }}
+    >
+      <h1>Card</h1>
+      <img
+        src={img}
+        alt=""
+        style={{
+          width: "300px",
+          height: "200px",
+          borderRadius: "5px",
+        }}
+      />
+      <div
+        className="card-content"
+        style={{ display: "flex", padding: "16px", flexDirection: "column" }}
+      >
+        <h1>Main Card content</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+          nesciunt, odio dolorem totam itaque voluptatem qui ullam. Obcaecati
+          corporis nisi quod, ipsam quam id harum illum temporibus nulla impedit
+          enim!
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
