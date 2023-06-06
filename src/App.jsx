@@ -11,34 +11,41 @@ const App = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "auto",
-        border: "2px solid black",
-        width: "400px",
-        padding: "16px",
-        borderRadius: "4px",
+        height: "100vh",
+        textAlign: "center",
       }}
     >
-      <h1>Card</h1>
-      <img
-        src={img}
-        alt=""
-        style={{
-          width: "300px",
-          height: "200px",
-          borderRadius: "5px",
-        }}
-      />
       <div
-        className="card-content"
-        style={{ display: "flex", padding: "16px", flexDirection: "column" }}
+        className="card"
+        style={{
+          width: "400px",
+          border: "1px  solid black",
+          padding: "16px",
+          borderRadius: "4px",
+        }}
       >
-        <h1>Main Card content</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-          nesciunt, odio dolorem totam itaque voluptatem qui ullam. Obcaecati
-          corporis nisi quod, ipsam quam id harum illum temporibus nulla impedit
-          enim!
-        </p>
+        <h1>Card</h1>
+        <img
+          src={img}
+          alt=""
+          style={{
+            width: "300px",
+            height: "200px",
+            borderRadius: "5px",
+          }}
+        />
+        <div
+          className="card-content"
+          style={{ display: "flex", padding: "16px", flexDirection: "column" }}
+        >
+          <h1>Main Card content</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+            nesciunt, odio dolorem totam itaque voluptatem qui ullam. Obcaecati
+            corporis nisi quod, ipsam quam id harum illum temporibus nulla
+            impedit enim!
+          </p>
+        </div>
       </div>
     </div>
   );
